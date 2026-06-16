@@ -17,3 +17,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - `dev-modernize-legacy`: split into a thin `SKILL.md` entry point plus `references/{strategy-catalog,diagnosis-axes,plan-template}.md` (progressive disclosure pattern). Removed external dependencies — no longer references `deep-interview` or built-in subagents; the only inter-skill link is `task-breakdown` (same repo).
+- `dev-modernize-legacy`: further refactored into a pure orchestrator. Each of the six phases (intake, diagnosis, options, evaluation, decomposition, rollback signals) now delegates to a dedicated sub-skill; the only domain logic left here is the strategy catalog. `references/diagnosis-axes.md` moved into the new `repo-diagnose` skill.
+- Extracted four sub-skills with independent reuse value: `dev-clarify-requirements`, `repo-diagnose`, `decision-compare-options`, `change-plan-rollback`. Each can stand alone (e.g., `repo-diagnose` is useful for onboarding or audits independent of legacy planning).
