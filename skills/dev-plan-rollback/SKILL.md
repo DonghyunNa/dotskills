@@ -1,12 +1,12 @@
 ---
-name: change-plan-rollback
+name: dev-plan-rollback
 description: 계획된 prod 변경(배포·마이그레이션·기능 출시·인프라 교체)에 대해 *측정 가능한 롤백 신호 + 대응 액션 + 에스컬레이션 경로* 를 정의한다.
   "롤백 계획", "abort criteria 정의", "rollback signals", "이 변경 망하면 어떻게",
   "안전 계획", "kill switch 기준" 같이 *prod 영향 있는 변경* 진입 전에 사용한다.
   내부 리팩토링, 테스트 변경, 또는 변경이 이미 끝난 상태에는 사용하지 않는다.
 ---
 
-# change-plan-rollback
+# dev-plan-rollback
 
 ## 무엇을 하는가
 

@@ -10,11 +10,11 @@ Treat this repo the way you'd treat `dotfiles` — a portable, versioned home fo
 
 | Name | Type | What it does | How it triggers |
 |---|---|---|---|
-| [task-breakdown](skills/task-breakdown/SKILL.md) | skill | Decompose a fuzzy workflow into phases of small, verifiable atomic tasks with explicit dependencies and open questions | "업무 쪼개줘", "작업 분해", "task breakdown", "WBS", "어디서부터 시작하지" |
+| [dev-breakdown-tasks](skills/dev-breakdown-tasks/SKILL.md) | skill | Decompose a fuzzy workflow into phases of small, verifiable atomic tasks with explicit dependencies and open questions | "업무 쪼개줘", "작업 분해", "task breakdown", "WBS", "어디서부터 시작하지" |
 | [dev-clarify-requirements](skills/dev-clarify-requirements/SKILL.md) | skill | Clarify a fuzzy dev request along 5 axes (scope · motivation · constraints · success criteria · risk tolerance) | "요구사항 정리", "범위 확정", "scope this work", "dev requirements" |
-| [repo-diagnose](skills/repo-diagnose/SKILL.md) | skill | One-page codebase health report across 7 axes — hotspots, coverage, coupling, integrations, known issues, build cycle, domain boundaries | "이 repo 진단", "codebase 분석", "온보딩 진단", "기술부채 어디" |
-| [decision-compare-options](skills/decision-compare-options/SKILL.md) | skill | Compare 2+ options on a shared 5-axis matrix (impact · time · risk · dependencies · reversibility) and emit a recommendation with conditional alternatives | "옵션 비교", "tradeoff 정리", "decision matrix", "이거 어느 게 나을까" |
-| [change-plan-rollback](skills/change-plan-rollback/SKILL.md) | skill | Define 3–5 measurable rollback signals + response actions + escalation paths for a planned production change | "롤백 계획", "abort criteria", "rollback signals", "kill switch 기준" |
+| [dev-diagnose-repo](skills/dev-diagnose-repo/SKILL.md) | skill | One-page codebase health report across 7 axes — hotspots, coverage, coupling, integrations, known issues, build cycle, domain boundaries | "이 repo 진단", "codebase 분석", "온보딩 진단", "기술부채 어디" |
+| [dev-compare-options](skills/dev-compare-options/SKILL.md) | skill | Compare 2+ options on a shared 5-axis matrix (impact · time · risk · dependencies · reversibility) and emit a recommendation with conditional alternatives | "옵션 비교", "tradeoff 정리", "decision matrix", "이거 어느 게 나을까" |
+| [dev-plan-rollback](skills/dev-plan-rollback/SKILL.md) | skill | Define 3–5 measurable rollback signals + response actions + escalation paths for a planned production change | "롤백 계획", "abort criteria", "rollback signals", "kill switch 기준" |
 | [dev-modernize-legacy](skills/dev-modernize-legacy/SKILL.md) | skill | Orchestrate the above sub-skills into a six-section legacy modernization strategy; this skill itself owns the strategy catalog (Strangler Fig, Branch by Abstraction, Characterization Tests, Mikado, Golden Master, Partial Rewrite, Big Bang, Leave Alone) | "레거시 개선 전략", "modernize legacy", "기술부채 우선순위", "strangler 패턴 적용", "rewrite vs refactor" |
 
 > Skills and agents are added one at a time as they're vetted for public release. See [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -39,7 +39,7 @@ Four allowed patterns:
 | # | Pattern | When | Examples |
 |---|---|---|---|
 | 1 | `<verb>-<object>` | Single-action skill (default) | `register-skill`, `update-config`, `humanize-korean` |
-| 2 | `<domain>-<verb>` | Domain-led name where the verb captures the whole action | `task-breakdown`, `court-finder`, `court-verify` |
+| 2 | `<domain>-<verb>` | Domain-led name where the verb captures the whole action | `court-finder`, `court-verify` |
 | 3 | `<verb>` alone | Universal verb whose meaning is obvious from context | `verify`, `run`, `init`, `review` — avoid for new skills, collision risk |
 | 4 | `<domain>-<verb>-<object>` | Use when it makes intent clearer than a 2-token name would; no count threshold | `court-find-venues`, `pr-review-diff`, `text-humanize-korean` |
 

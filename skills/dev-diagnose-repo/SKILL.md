@@ -1,12 +1,12 @@
 ---
-name: repo-diagnose
+name: dev-diagnose-repo
 description: 코드 저장소를 7축(hotspot · 테스트 커버리지 · 결합도 · 외부 통합 · 알려진 이슈 영역 · 빌드·배포 사이클 · 도메인 경계)으로 진단해 *한 페이지 리포트* 를 만든다.
   "이 repo 진단해줘", "codebase 분석", "온보딩 진단", "코드베이스 위험 신호", "repo diagnose",
   "기술부채 어디 있나" 같이 *큰 코드 자산의 현재 상태* 를 빠르게 파악해야 할 때 사용한다.
   단일 함수·파일 분석, 또는 이미 진단 결과가 손에 있는 상태에는 사용하지 않는다.
 ---
 
-# repo-diagnose
+# dev-diagnose-repo
 
 ## 무엇을 하는가
 

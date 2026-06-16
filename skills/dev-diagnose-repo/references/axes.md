@@ -1,6 +1,6 @@
 # Diagnosis axes — measurement commands
 
-`repo-diagnose` SKILL.md §7축 의 각 축을 *실제로* 측정하는 Bash/Read/Grep 명령. 직접 측정 가능한 축은 이걸 그대로 사용.
+`dev-diagnose-repo` SKILL.md §7축 의 각 축을 *실제로* 측정하는 Bash/Read/Grep 명령. 직접 측정 가능한 축은 이걸 그대로 사용.
 
 ## 1. 변경 빈도 — Hotspot
 

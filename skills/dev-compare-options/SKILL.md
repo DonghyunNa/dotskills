@@ -1,12 +1,12 @@
 ---
-name: decision-compare-options
+name: dev-compare-options
 description: 2개 이상의 후보 옵션을 *같은 축* 으로 비교 매트릭스 + 추천을 만든다. 기본 5축(효과·시간·리스크·의존·되돌리기)이며 상황에 맞춰 교체·추가 가능.
   "옵션 비교", "이거 어느 게 나을까", "tradeoff 정리", "compare options", "decision matrix",
   "옵션 평가" 같이 *기술 의사결정 시 후보 비교* 가 필요할 때 사용한다.
   옵션이 1개거나, 정량 비교가 어려운 순수 가치판단(디자인 미감 등)에는 사용하지 않는다.
 ---
 
-# decision-compare-options
+# dev-compare-options
 
 ## 무엇을 하는가
 

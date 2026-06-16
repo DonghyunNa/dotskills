@@ -1,5 +1,5 @@
 ---
-name: task-breakdown
+name: dev-breakdown-tasks
 description: 업무 흐름·프로젝트·작업 묶음을 받아 실행 가능한 작은 단위 작업으로 분해한다.
   "업무 분리", "업무 쪼개", "작업 분해", "task breakdown", "WBS", "작게 나눠줘",
   "이거 어떻게 시작하지", "어디서부터 손대지" 같이 큰 일거리를 다루기 시작하는
@@ -7,7 +7,7 @@ description: 업무 흐름·프로젝트·작업 묶음을 받아 실행 가능�
   분해할 게 없는 작업에는 사용하지 않는다.
 ---
 
-# task-breakdown
+# dev-breakdown-tasks
 
 ## 무엇을 하는가
 

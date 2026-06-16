@@ -27,7 +27,7 @@ description: 레거시 코드 자산을 어떻게 점진적으로 현대화할�
 - 한두 시간이면 끝날 국소 리팩토링
 - 그린필드 새 프로젝트
 - 단일 함수 이름 변경·타입 보강
-- 이미 합의된 마이그레이션의 실행 단계 — `task-breakdown` 직접 호출
+- 이미 합의된 마이그레이션의 실행 단계 — `dev-breakdown-tasks` 직접 호출
 
 ## 작업 절차 — 6단계 오케스트레이션
 
@@ -39,7 +39,7 @@ description: 레거시 코드 자산을 어떻게 점진적으로 현대화할�
 - **제약**: downtime 허용도 · 외부 팀 의존
 - **성공 정의**: 6개월~1년 시점의 *관찰 가능* 신호
 
-### §2. 진단 → [[repo-diagnose]]
+### §2. 진단 → [[dev-diagnose-repo]]
 
 7축(hotspot · 커버리지 · 결합도 · 외부 통합 · 알려진 이슈 · 빌드 사이클 · 도메인 경계) 한 페이지 리포트. 그대로 위임.
 
@@ -49,7 +49,7 @@ description: 레거시 코드 자산을 어떻게 점진적으로 현대화할�
 
 8개 전부 나열은 큐레이션 안 한 것.
 
-### §4. 평가 → [[decision-compare-options]]
+### §4. 평가 → [[dev-compare-options]]
 
 5축(효과·시간·리스크·의존·되돌리기) 매트릭스. 위임. 축 정의는 sub-skill 기본 그대로 — 레거시 맥락만 살짝 좁혀:
 
@@ -57,7 +57,7 @@ description: 레거시 코드 자산을 어떻게 점진적으로 현대화할�
 - **리스크**: prod 장애·데이터 손상
 - **되돌리기**: 망쳤을 때 롤백 비용
 
-### §5. 분해 → [[task-breakdown]]
+### §5. 분해 → [[dev-breakdown-tasks]]
 
 선택된 전략을 Phase / Atomic task / Done-when 으로. **Phase 1은 거의 항상 안전망**:
 
@@ -67,7 +67,7 @@ description: 레거시 코드 자산을 어떻게 점진적으로 현대화할�
 
 > 안전망 없이 진입 = 그 다음 사고 보고서를 미리 쓰는 것.
 
-### §6. 롤백 신호 → [[change-plan-rollback]]
+### §6. 롤백 신호 → [[dev-plan-rollback]]
 
 객관적 임계값 3~5개 + 대응 액션 + 결정자/알림 경로. 위임.
 
@@ -94,10 +94,10 @@ description: 레거시 코드 자산을 어떻게 점진적으로 현대화할�
 | 단계 | 위임 스킬 | 위치 |
 |---|---|---|
 | §1 인테이크 | `dev-clarify-requirements` | 같은 repo |
-| §2 진단 | `repo-diagnose` | 같은 repo |
+| §2 진단 | `dev-diagnose-repo` | 같은 repo |
 | §3 옵션 도출 | (본 스킬) | `references/strategy-catalog.md` |
-| §4 평가 | `decision-compare-options` | 같은 repo |
-| §5 분해 | `task-breakdown` | 같은 repo |
-| §6 롤백 신호 | `change-plan-rollback` | 같은 repo |
+| §4 평가 | `dev-compare-options` | 같은 repo |
+| §5 분해 | `dev-breakdown-tasks` | 같은 repo |
+| §6 롤백 신호 | `dev-plan-rollback` | 같은 repo |
 
 모두 같은 repo → Claude 가 단계마다 자동 트리거.
