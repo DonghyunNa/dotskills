@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Initial repo skeleton: README, LICENSE (MIT), CONTRIBUTING guide, `.gitignore`, GitHub Actions secret-scan workflow (gitleaks default rules), empty `skills/` and `agents/` directories.
+- `task-breakdown` skill — decompose a fuzzy workflow into phases of small, verifiable atomic tasks with dependencies and open questions surfaced.

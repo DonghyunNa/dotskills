@@ -10,7 +10,7 @@ Treat this repo the way you'd treat `dotfiles` — a portable, versioned home fo
 
 | Name | Type | What it does | How it triggers |
 |---|---|---|---|
-| _empty_ | — | — | — |
+| [task-breakdown](skills/task-breakdown/SKILL.md) | skill | Decompose a fuzzy workflow into phases of small, verifiable atomic tasks with explicit dependencies and open questions | "업무 쪼개줘", "작업 분해", "task breakdown", "WBS", "어디서부터 시작하지" |
 
 > Skills and agents are added one at a time as they're vetted for public release. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
