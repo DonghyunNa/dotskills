@@ -1,0 +1,41 @@
+# --- Secrets / private data ---
+**/.env*
+!**/.env.example
+**/secrets/
+**/*-private.*
+**/*-internal.*
+**/*.key
+**/*.pem
+
+# Personal gitleaks config — contains private patterns I scan against locally.
+# Not part of this repo's public surface.
+.gitleaks.toml
+
+# --- Known data files that should never be public ---
+**/courts.json
+**/overrides.json
+**/naver-info.json
+**/merge-pairs.json
+**/exclude.json
+**/image-blocklist.json
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# --- Language runtimes ---
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# --- Logs / build artifacts ---
+*.log
+dist/
+build/
+.cache/
