@@ -11,6 +11,7 @@ Treat this repo the way you'd treat `dotfiles` — a portable, versioned home fo
 | Name | Type | What it does | How it triggers |
 |---|---|---|---|
 | [task-breakdown](skills/task-breakdown/SKILL.md) | skill | Decompose a fuzzy workflow into phases of small, verifiable atomic tasks with explicit dependencies and open questions | "업무 쪼개줘", "작업 분해", "task breakdown", "WBS", "어디서부터 시작하지" |
+| [dev-modernize-legacy](skills/dev-modernize-legacy/SKILL.md) | skill | Produce a legacy-code modernization strategy — diagnosis, curated option set, risk-effect matrix, phased plan with safety net first, and rollback signals | "레거시 개선 전략", "modernize legacy", "기술부채 우선순위", "strangler 패턴 적용", "rewrite vs refactor" |
 
 > Skills and agents are added one at a time as they're vetted for public release. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
